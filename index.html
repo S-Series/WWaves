@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>장비 OCR 업로드</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="img/Gem.webp" alt="로고" class="logo-icon">
+        <div class="navbar-title"></div>
+        <div class="navbar-links">
+            <button>홈</button>
+            <button>OCR 불러오기</button>
+            <button>도움말</button>
+        </div>
+    </div>
+    <div id="top-preview-box">상단 박스 (21:9)</div>
+    <div id="equipment-container">
+        <div class="slot-wrapper">
+            <div class="slot" data-index="0">에코 1</div>
+            <div class="dropdown-grid-vertical">
+                <select class="main-stat"></select><select class="main-value"></select>
+                <select class="main-stat"></select><select class="main-value"></select>
+                <div class="dropdown-divider"></div>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+            </div>
+            <div class="text-output" id="text-0">결과 없음</div>
+        </div>
+        <div class="slot-wrapper">
+            <div class="slot" data-index="1">에코 2</div>
+            <div class="dropdown-grid-vertical">
+                <select class="main-stat"></select><select class="main-value"></select>
+                <select class="main-stat"></select><select class="main-value"></select>
+                <div class="dropdown-divider"></div>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+            </div>
+            <div class="text-output" id="text-1">결과 없음</div>
+        </div>
+        <div class="slot-wrapper">
+            <div class="slot" data-index="2">에코 3</div>
+            <div class="dropdown-grid-vertical">
+                <select class="main-stat"></select><select class="main-value"></select>
+                <select class="main-stat"></select><select class="main-value"></select>
+                <div class="dropdown-divider"></div>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+            </div>
+            <div class="text-output" id="text-2">결과 없음</div>
+        </div>
+        <div class="slot-wrapper">
+            <div class="slot" data-index="3">에코 4</div>
+            <div class="dropdown-grid-vertical">
+                <select class="main-stat"></select><select class="main-value"></select>
+                <select class="main-stat"></select><select class="main-value"></select>
+                <div class="dropdown-divider"></div>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+            </div>
+            <div class="text-output" id="text-3">결과 없음</div>
+        </div>
+        <div class="slot-wrapper">
+            <div class="slot" data-index="4">에코 5</div>
+            <div class="dropdown-grid-vertical">
+                <select class="main-stat"></select><select class="main-value"></select>
+                <select class="main-stat"></select><select class="main-value"></select>
+                <div class="dropdown-divider"></div>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+                <select class="sub-stat"></select><select class="sub-value"></select>
+            </div>
+            <div class="text-output" id="text-4">결과 없음</div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

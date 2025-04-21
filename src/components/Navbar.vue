@@ -1,7 +1,8 @@
 <template>
     <nav class="navbar">
         <div class="navbar-left">
-            <img src="../gem.webp" alt="logo" class="logo" />
+            <img src="/gem.webp" alt="logo" class="logo" />
+            띵조 DEV
         </div>
         <div class="navbar-right">
             <button>홈</button>
@@ -20,13 +21,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2c3e50;
+    background-color: #0e3d6b;
     color: white;
     padding: 12px 24px;
 }
 
 .navbar-left .logo {
-    height: 36px;
+    width: 64px;
+    height: 64px;
 }
 
 .navbar-right button {

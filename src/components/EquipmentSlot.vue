@@ -73,6 +73,7 @@ function getSubValues(stat) {
 .slot-label {
     font-weight: bold;
     margin-bottom: 6px;
+    color: #ffffff;
 }
 
 .dropdown-grid-vertical {

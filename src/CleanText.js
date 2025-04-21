@@ -2,8 +2,10 @@ export function cleanText(text) {
   const ocrCorrections = {
     SEER: '크리티컬',
     SEEP: '크리티컬피해',
+    '32EZmay': '크리티컬피해',
     '22EIH': '강공격피해보너스',
     PUB: '공격력',
+    BEY: '공격력',
     HHP: 'HP',
     레비y: 'HP',
     oly: '방어력',

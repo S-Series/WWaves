@@ -11,9 +11,12 @@ import EquipmentSlot from './EquipmentSlot.vue'
 
 <style scoped>
 .equipment-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 16px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5개의 동일한 너비 컬럼 */
+  gap: 20px;
+  justify-content: center; /* 중앙 정렬 */
+  width: fit-content;
+  margin: 0 auto; /* 수평 중앙정렬 */
 }
+
 </style>

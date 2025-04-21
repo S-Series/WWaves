@@ -3,9 +3,9 @@
     <Navbar />
     <div class="main-panel">
       <CharacterPanel />
+      <OcrGrid />
       <EquipmentGrid />
     </div>
-    <OcrUploader />
   </div>
 </template>
 
@@ -14,19 +14,7 @@ import Navbar from './components/Navbar.vue'
 import CharacterPanel from './components/CharacterPanel.vue'
 import EquipmentGrid from './components/EquipmentGrid.vue'
 import OcrUploader from './components/OcrUploader.vue'
+import OcrGrid from './components/OcrGrid.vue'
 </script>
 
-<style scoped>
-.app-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-panel {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  margin-top: 1rem;
-}
-</style>
+<style src="./style.css"/>

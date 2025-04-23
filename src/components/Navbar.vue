@@ -18,12 +18,17 @@
 
 <style scoped>
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0e3d6b;
-    color: white;
-    padding: 12px 24px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 1000;
+  background-color: #0e3d6b;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-left .logo {
@@ -31,16 +36,56 @@
     height: 64px;
 }
 
+.navbar-right {
+    margin-right: 2vh;
+}
+
 .navbar-right button {
     background: none;
     border: none;
     color: white;
-    margin-left: 20px;
     font-size: 14px;
     cursor: pointer;
 }
 
 .navbar-right button:hover {
     text-decoration: underline;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.logo-icon {
+  height: 100%;
+  width: auto;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  /*justify-content: flex-end;*/
+  width: 100%;
+}
+
+.navbar-links button {
+  margin-left: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.navbar-links button:hover {
+  text-decoration: underline;
 }
 </style>

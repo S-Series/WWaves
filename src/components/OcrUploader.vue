@@ -73,22 +73,23 @@ const runOcr = async (imgDataUrl) => {
 
 <style scoped>
 .ocr-uploader {
-  padding: 1rem;
+  flex: 1 1 20%;
+  max-width: 20%;
+  aspect-ratio: 4/3;
+  padding: 1vh;
   border: 2px dashed #ccc;
   text-align: center;
   border-radius: 12px;
-  margin: 1rem;
-  width: 180px;
-  height: auto; /* <-- 높이는 내용에 맞게 */
   background: #fff;
   outline: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem; /* 요소 간 여백 */
+  box-sizing: border-box;
+  margin: 0.75vh 0.5vh;
 }
 
 .ocr-uploader.active {
@@ -107,7 +108,7 @@ const runOcr = async (imgDataUrl) => {
   width: 100%;
   height: auto;
   border-radius: 6px;
-  max-height: 80px; /* 제한을 두되 적당히 */
+  max-height: 80px;
   object-fit: contain;
 }
 
@@ -142,7 +143,6 @@ const runOcr = async (imgDataUrl) => {
     border: 1px solid #ddd;
 }
 
-/* 이걸 추가! */
 .ocr-result pre {
     white-space: pre-wrap;
     word-break: break-word;

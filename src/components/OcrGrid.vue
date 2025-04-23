@@ -1,20 +1,21 @@
 <template>
-    <div class="ocr-uploader-grid">
-        <OcrUploader v-for="n in 5" :key="n" :index="n" />
-    </div>
+  <div class="ocr-grid">
+    <OcrUploader v-for="i in 5" :key="i" :slotIndex="i - 1" />
+  </div>
 </template>
 
 <script setup>
-import OcrUploader from './OcrUploader.vue';
+import OcrUploader from './OcrUploader.vue'
 </script>
 
 <style scoped>
-.ocr-uploader-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
+.ocr-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: min(1080px, 90vw);
+  border-radius: 1vh 1vw;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 </style>

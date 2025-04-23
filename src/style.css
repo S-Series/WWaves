@@ -7,8 +7,13 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
   font-family: sans-serif;
+
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #equipment-container {
@@ -47,55 +52,6 @@ select.sub-stat,
 select.sub-value {
   background-color: #f9f9f9;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  background-color: #2c3e50;
-  padding: 0 20px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.navbar-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  height: 100%;
-}
-
-.logo-icon {
-  height: 100%;
-  width: auto;
-}
-
-.navbar-title {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 20px;
-  /*justify-content: flex-end;*/
-  width: 100%;
-}
-
-.navbar-links button {
-  margin-left: 20px;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.navbar-links button:hover {
-  text-decoration: underline;
-}
-
 
 .slot {
   width: 200px;
@@ -186,4 +142,10 @@ select.sub-value {
 .label-right {
   text-align: right;
   padding-right: 10px;
+}
+
+.main-panel {
+  margin-top: 5%;
+  margin-left: 20vh;
+  padding: 1rem;
 }
